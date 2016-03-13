@@ -1,20 +1,21 @@
 h1{font-size:2em;font-weight:normal;}
-.first .logo{left:21%;float:left;}
-.first{background-color:white;height:70px;width:100%;}
-.menu{padding-top:20px;padding-right:14%;padding-left:20%;float:right;overflow:visible;}
-.menu2{padding-left:70%;}
-.menu-table,.lang-table{border-collapse:separate;}
+.first .logo{float:left;background-size:100%;}
+.first{background-color:white;height:70px;width:70%;padding-left: 15%;padding-right: 15%;}
+.menu {}
+.menu2 {float: right;padding-bottom: 2%}
+.menu-table,.lang-table{border-collapse:separate;float:right;}
 #search{border-radius:5px;border-width:1px;}
 #input_container{position:relative;padding:0;margin:0;}
-#input{height:20px;margin:0;padding-left:30px;}
-#input_img ,#divider{position:absolute;bottom:5px;left:157px;width:11px;height:11px;}
-#divider{position:absolute;bottom:5px;left:150px;width:2px;height:11px;}
-#menu4{padding-right:30px;}
-td[id^="menu"]{color:#242322;height:3px;font-size:10px;text-align:center;border-image:url(source/img/line_divider_video.png) 6 round;border-right-width:2px;border-left-width:0px;border-bottom-width:0px;border-top-width:0px;font-family:Century Gothic;padding-right:10px;padding-left:10px;}
+#input{height:20px;margin:0}
+#input_img {position:absolute;bottom:5px;right:2%;width:11px;height:11px;}
+#divider{position:absolute;bottom:5px;right:10%;width:2px;height:11px;}
+
+.nav {width:19%;font-size : 80%;color:#242322;height:3px;text-align:center;border-image:url(source/img/line_divider_video.png) 6 round;border-right-width:2px;border-left-width:0px;border-bottom-width:0px;border-top-width:0px;font-family:Century Gothic;padding-right:1%;padding-left:1%;}
+
 td[id^='lang-menu']{color:#242322;height:3px;font-size:13px;text-align:center;border-image:url(source/img/line_divider_video.png) 6 round;border-right-width:2px;border-left-width:0px;border-bottom-width:0px;border-top-width:0px;font-family:Century Gothic;}
-.menu-table td:nth-last-child(3){border-right-width:0px;}
+#menu4 {border-right-width:0px;}
 .lang-table td:nth-last-child(1){border-right-width:0px;}
-#search-menu5{padding-right:80px;}
+
 .first .logo{background-image:url(source/img/comverse-logo.png);height:63px;width:184px;position:relative;}
 .second{background-image:url(source/img/slide-bg-complexity.jpg);height:400px;background-size:100% 100%;background-repeat:no-repeat;width:100%;overflow-x:visible;overflow-y:visible;}
 .s-menu-table{border-collapse:separate;}
