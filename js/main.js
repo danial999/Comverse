@@ -5,27 +5,52 @@ function OnRes() {
 
   var width =window.outerWidth;
   var width2 =window.innerWidth;
+  console.log("outerWidth="+width);
+  console.log("innerWidth="+width2);
+
   var myMarginleft = (width -850)/2 - (width-width2)- (width-width2);
   var myMarginRight = (width -850)/2 + (width-width2);
   var adjust = (1400 -width);
  var fontSize = 0;
   
-  if(width>1400) {
- 
+  if(width>975) {
+  setStyle('.content-wrapper-all' , {'width':950+'px'}); 
+     setStyle('.first' , {'width':100+'%'});
+        setStyle('.note' , {'width':280+'px'});
+     setStyle('.note' , {'margin':2.8+'%'});
+      setStyle('#note1' , {'margin-left':0+'%'});
+      setStyle('#note3' , {'margin-right':0+'%'});
+       setStyle('.second' , {'height':515+'px'});
+  }
+  else{
+      setStyle('.content-wrapper-all' , {'width':100+'%'});
+      setStyle('.second' , {'height':800+'px'});
+    setStyle('.note' , {'width':100+'%'});
+     setStyle('.note' , {'margin':0+'%'});
   
-     setStyle('.first' , {'width':70+'%','padding-left':15+'%','padding-right':15+'%'});
+  }
+  if(width<480) {
+    setStyle('.third' , {'height':490+'px'});
+      
+  }
+  
+  else if(width<675){
+    setStyle('.third' , {'height':370+'px'});
+      
+  }
+  else {
+     setStyle('.third' , {'height':250+'px'});
 
   }
-
+  
+  
   if(adjust>0) {
     adjust=adjust/4;
    
     margin = adjust/6;
     fontSize = (80-adjust/10);
 
-    // setStyle('.nav' , {'font-size':fontSize+'%','width':(19-adjust/50)+'%'});   
-      console.log(adjust/50);
-    setStyle('.first' , {'width':(70+margin)+'%','padding-left':(15-(margin/2))+'%','padding-right':(15-(margin/2))+'%'});
+    
    
   }
 
