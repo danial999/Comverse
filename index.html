@@ -470,8 +470,21 @@
 				<div class="latest-posts">
 					<h1>Latest blog posts</h1>
 					<div class="footer-date">
-						<div class="footer-day">18</div>
-						<div class="footer-month">July</div>
+						<div id="day" class="footer-day"></div>
+						<script>
+						var d = new Date();
+
+						document.getElementById("day").innerHTML = d.getDate();
+						</script>
+						<div id="month" class="footer-month"></div>
+						<script>
+							var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+		 							 "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+								];
+								var d = new Date();
+		
+								document.getElementById("month").innerHTML =monthNames[d.getMonth()];
+						</script>
 					</div>
 					<div class="post-title">
 						Comverse Regains Lead in Convergent Charging Market
