@@ -21,21 +21,42 @@ function OnRes() {
       setStyle('#note1' , {'margin-left':0+'%'});
       setStyle('#note3' , {'margin-right':0+'%'});
        setStyle('.second' , {'height':515+'px'});
+       setStyle('.success-stories' , {'height':405+'px'});
+       setStyle('#fourth--lay--text' , {'font-size':100+'%'});
+        setStyle('.month-text' ,  {'font-size':20+'px'});
+        setStyle('.date-text' ,  {'font-size':50+'px'});
+       
+       
   }
-  else{
+  else{ 
       setStyle('.content-wrapper-all' , {'width':100+'%'});
       setStyle('.second' , {'height':800+'px'});
+          setStyle('.fifth' , {'height':1200+'px'});
+          setStyle('.success-stories' , {'height':700+'px'});
+          setStyle('.month-text' ,  {'font-size':18+'px'});
+          setStyle('.date-text' ,  {'font-size':45+'px'});
+            
+    setStyle('#fourth--lay--text' , {'font-size':70+'%'});
     setStyle('.note' , {'width':100+'%'});
      setStyle('.note' , {'margin':0+'%'});
-  
+       if(width<635) {
+          setStyle('.success-stories' , {'height':1000+'px'});   
+        }
   }
   if(width<480) {
     setStyle('.third' , {'height':490+'px'});
-      
+      setStyle('#fourth--lay--text' , {'font-size':40+'%'});
   }
   
-  else if(width<675){
+  else if(width<685){
     setStyle('.third' , {'height':370+'px'});
+ 
+ 
+    setStyle('.success-stories' , {'text-align':'center'});
+      
+  }
+  else if(width<950){
+    setStyle('.third' , {'height':300+'px'});
       
   }
   else {
@@ -43,6 +64,7 @@ function OnRes() {
 
   }
   
+
   
   if(adjust>0) {
     adjust=adjust/4;

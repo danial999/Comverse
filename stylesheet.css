@@ -69,7 +69,7 @@ div[id^="Button"] input{cursor:pointer;border:none;height:60px;width:120px;backg
 div[id^="Button"] span{position:relative;padding-top:30%;padding-left:8%;color:white;font-size:80%;text-align:center;font-family:Century Gothic;-webkit-margin-before:0px;-webkit-margin-after:0px;clear:both;width:120px;display:block;}
 .fourth{background-image:url(source/img/news-and-events-bg.jpg);height:300px;width:100%;background-size:100% 100%;}
 div#fourth--title span, div#third--title span ,div#fourth--lay1 span#news,div#fourth--lay2 span#events,
-div#fifth--title span,div#fourth--lay3 span#press{color:white;font-size:130%;font-family:Century Gothic;text-align:center;word-spacing:normal;white-space:nowrap;-webkit-margin-before:0px;-webkit-margin-after:0px;}
+div#fifth--title span,div#fourth--lay3 span#press{color:white;font-size:1.2em;font-family:Century Gothic;text-align:center;word-spacing:normal;white-space:nowrap;-webkit-margin-before:0px;-webkit-margin-after:0px;}
 div#fourth--lay1 span#news,div#fourth--lay2 span#events,
 div#fifth--title span,div#fourth--lay3 span#press{}
 div#fourth--lay1 span,div#fourth--lay2 span,div#fourth--lay3 span{float:left;position:relative;}
@@ -82,14 +82,14 @@ div#fourth--lay1,div#fourth--lay2,div#fourth--lay3{position:relative;float:left;
 .news--lay:hover ,.events--lay:hover ,.press--lay:hover{background-color:rgba(255,255,255,0.5);}
 .news-date{text-align:center;position:absolute;right:70%;left:5%;height:65px;margin:5% auto;background-color:#2A97CD;border:0 none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;cursor:pointer;font-family:Century Gothic;border-bottom:2px dotted white;color:#FFFFFF;}
 .news-month{text-align:center;position:absolute;bottom:0%;right:70%;left:5%;height:35px;margin:15px auto;background-color:#2A97CD;opacity:1;border:0 none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;cursor:pointer;font-family:Century Gothic;}
-#fourth--lay--text{padding-left:34%;padding-top:10px;font-size:13px;overflow:hidden;}
+#fourth--lay--text{padding-left:34%;padding-top:10px;font-size:90%;overflow:hidden;}
 #news--icon{background:url('source/img/eventListIconNews.png') no-repeat scroll 0 0;height:17px;width:30px;}
 #events--icon{background:url('source/img/eventListIconEvents.png') no-repeat scroll 0 0;height:17px;width:30px;}
 #press--icon{background:url('source/img/eventListIconPress.png') no-repeat scroll 0 0;height:17px;width:30px;}
 .icon-pos{position:absolute;left:5px;top:160px;}
 .icon-pos p{position:relative;float:left;}
-#icon--text{color:white;position:relative;float:right;padding-top:5px;font-size:1em;text-align:center;color:white;}
-#icon--text2{color:white;position:relative;float:right;padding-top:5px;font-size:1em;text-align:center;color:white;white-space:normal;}
+#icon--text{color:white;position:relative;float:right;padding-top:5px;font-size:100%;text-align:center;color:white;}
+#icon--text2{color:white;position:relative;float:right;padding-top:5px;font-size:100%;text-align:center;color:white;white-space:normal;}
 .icon-pos:hover{cursor:pointer;}
 .icon-pos:hover #news--icon{background:url('source/img/eventListIconNews_hover.png') no-repeat scroll 0 0;}
 .icon-pos:hover #events--icon{background:url('source/img/eventListIconEvents_hover.png') no-repeat scroll 0 0;}
@@ -111,10 +111,12 @@ div#fourth--lay1,div#fourth--lay2,div#fourth--lay3{position:relative;float:left;
 .company-logo{float:right;height:30px;}
 img.company-logo{-webkit-filter:grayscale(100%) opacity(50%);filter:grayscale(100%) opacity(50%);}
 .name{color:#4fadde;text-transform:uppercase;font-weight:normal;margin:5px 0 0 0;}
-.client-logo{width:110px;height:100px;background:rgb(255, 255, 255);border-radius:2px;float:left;margin:0 0 10px 10px;text-align:center;position:relative;z-index:1;}
+.client-logo{vertical-align: middle; width:110px;height:100px;background:rgb(255, 255, 255);border-radius:2px;float:left;margin:0 0 10px 10px;text-align:center;position:relative;z-index:1;}
+.client-logo img {vertical-align:middle;-webkit-filter:grayscale(100%) opacity(50%);filter:grayscale(100%) opacity(50%);
+}
 .no-style-list{list-style-type:none;margin:0;padding:0;}
 .client-logo:first-child{margin:0 0 10px 0;}
-.client-logo img{display:inline-block;vertical-align:middle;-webkit-filter:grayscale(100%) opacity(50%);filter:grayscale(100%) opacity(50%);}
+
 .client-logo:after{background:#3aa6db;content:"";position:absolute;bottom:0;left:0;width:100%;height:0px;}
 .client-logo:hover:after{height:100%;}
 .clients.up-view{margin-top:-344px;position:absolute;}
