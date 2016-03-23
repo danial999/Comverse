@@ -5,8 +5,7 @@ function OnRes() {
 
   var width =window.outerWidth;
   var width2 =window.innerWidth;
-  console.log("outerWidth="+width);
-  console.log("innerWidth="+width2);
+
 
   var myMarginleft = (width -850)/2 - (width-width2)- (width-width2);
   var myMarginRight = (width -850)/2 + (width-width2);
@@ -27,14 +26,31 @@ function OnRes() {
         setStyle('.date-text' ,  {'font-size':50+'px'});
        
         setStyle('.fifth' , {'height':790+'px'});
+        setStyle('.sixth' , {'height':350+'px'});
+      setStyle('.dropdown' , {'visibility':'hidden'});
+      setStyle('.menu' , {'visibility':'visible'});
+    setStyle('.dropdown' , {'display':'none'});
+setStyle('.searchBox' , {'display':'block'});
+       setStyle('.search-btn' , {'visibility':'hidden'});
+       setStyle('.search-btn' , {'display':'none'});
+
+
   }
   else{ 
+    setStyle('.searchBox' , {'display':'none'});
+       setStyle('.search-btn' , {'visibility':'visible'});
+         setStyle('.search-btn' , {'display':'block'});
+    setStyle('.dropdown' , {'visibility':'visible'});
+        setStyle('.dropdown' , {'display':'inline-block'});
+      setStyle('.menu' , {'visibility':'hidden'});
       setStyle('.content-wrapper-all' , {'width':100+'%'});
       setStyle('.second' , {'height':800+'px'});
           setStyle('.fifth' , {'height':1200+'px'});
+           setStyle('.sixth' , {'height':600+'px'});
           setStyle('.success-stories' , {'height':700+'px'});
           setStyle('.month-text' ,  {'font-size':18+'px'});
           setStyle('.date-text' ,  {'font-size':45+'px'});
+            
             
     setStyle('#fourth--lay--text' , {'font-size':70+'%'});
     setStyle('.note' , {'width':100+'%'});
@@ -68,7 +84,7 @@ function OnRes() {
   
    
    
-  }
+  
 
 }
 
@@ -106,7 +122,14 @@ else if(elem2 != null){
 
 
 
-function searchFn() {
-  
+function search() {
+  debugger;
+  var elem = document.querySelectorAll('.searchBox');
+  if(elem[0].style.display==='none'){
+   setStyle('.searchBox' , {'display':'block'});
+ }
+ else{
+   setStyle('.searchBox' , {'display':'none'});
+ }
 
 }
