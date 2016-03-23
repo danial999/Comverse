@@ -26,7 +26,7 @@ function OnRes() {
         setStyle('.month-text' ,  {'font-size':20+'px'});
         setStyle('.date-text' ,  {'font-size':50+'px'});
        
-       
+        setStyle('.fifth' , {'height':790+'px'});
   }
   else{ 
       setStyle('.content-wrapper-all' , {'width':100+'%'});
@@ -66,13 +66,7 @@ function OnRes() {
   
 
   
-  if(adjust>0) {
-    adjust=adjust/4;
    
-    margin = adjust/6;
-    fontSize = (80-adjust/10);
-
-    
    
   }
 
